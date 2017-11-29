@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+  </head>
+  <body>
+      <input type="text" name="location" id= "search_location" placeholder= "search..."/>
+  <script>
+    function activatePlacesSearch(){
+	var input = document.getElementById('search_location');
+	var autocomplete = new google.maps.places.Autocomplete(input);
+}
+      
+  </script>
+     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkx9LCmQUPipLVS992ixaAEWVJhNPtu5I&libraries=places&callback=activatePlacesSearch"></script>
+  </body>
+</html>
